@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const un = usernameInput.value.trim();
     const pw = passwordInput.value.trim();
 
+    //checks to see if theres items in the local storage 
     const listData = localStorage.getItem('credentials');
     let items;
     if (listData) {
@@ -24,17 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
       items = [];
     }    
 
+    //turns the localstorage array to independent objects
     let recordElement;
     const recentItems = items.slice();
     recentItems.forEach(record => {
       recordElement = record;
     });
 
+    // checks the username and password input if its populatied
     if (un === '' || pw === '') {
         alert('Please enter your username  or password before entering the clocked-in website.');
         return;
-      }
+    }
 
+    // checks if the username and password input are the currect values
     if (un == recordElement.username && pw == recordElement.password ) {
         messageText.textContent = "Login successful!"
         setTimeout(() => {
@@ -46,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
   }
-
+  // this function was used to setup the username and password for the sign In page
   function saveSignIn(uname, pword) {
 
     const signInRecord = {
