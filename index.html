@@ -5,13 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clocked-In | Sign In</title>
         <link rel="stylesheet" href="./style.css">
+        <script src="./Scripts/signinScript.js" defer></script>
+        <style>
+            h2 {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Sign In / Register</h1>
+            <h1>Sign In</h1>
         </header>
+        <h2 id="message">To clock-in please enter your username and password</h2>
         <main>
-            
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button id="signInButton">Sign In</button>
         </main>
         <footer>
             <p>© 2025 CLOCKED-IN - Made by Kole Johnson</p>
