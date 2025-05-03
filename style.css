@@ -137,7 +137,7 @@ table {
 }
 th{
     padding: 10px;
-    border: solid 1px #295c2b;
+    border-left: solid 1px #ddd;
     background-color: #4caf50;
     color: #fff;
 }
