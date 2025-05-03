@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function handleSignIn() {
     validateSignIn();
+    //saveSignIn("admin", "admin") // remove the first two // and click sign in to add the admin as password and usernames 
   }
 
   function validateSignIn() {
