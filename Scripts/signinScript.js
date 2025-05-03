@@ -16,38 +16,46 @@ document.addEventListener('DOMContentLoaded', function() {
     const un = usernameInput.value.trim();
     const pw = passwordInput.value.trim();
 
-    //checks to see if theres items in the local storage 
+    //checks to see if theres is a local storage named credentials if not tell the user there is none
     const listData = localStorage.getItem('credentials');
-    let items;
     if (listData) {
-      items = JSON.parse(listData);
+
+        //parses items in the credentials storage
+        let items;
+        if (listData) {
+          items = JSON.parse(listData);
+        } else {
+          items = [];
+        }    
+    
+        //turns the localstorage array to independent objects
+        let recordElement;
+        const recentItems = items.slice();
+        recentItems.forEach(record => {
+          recordElement = record;
+        });
+    
+        // checks the username and password input if its populatied
+        if (un === '' || pw === '') {
+            alert('Please enter your username  or password before entering the clocked-in website.');
+            return;
+        }
+    
+        // checks if the username and password input are the currect values
+        if (un == recordElement.username && pw == recordElement.password ) {
+            messageText.textContent = "Login successful!"
+            setTimeout(() => {
+                window.location.href = "clocked-in.html"
+            }, 5000);
+    
+        } else {
+            messageText.textContent = "Password or Username is invaild."
+        }
     } else {
-      items = [];
-    }    
-
-    //turns the localstorage array to independent objects
-    let recordElement;
-    const recentItems = items.slice();
-    recentItems.forEach(record => {
-      recordElement = record;
-    });
-
-    // checks the username and password input if its populatied
-    if (un === '' || pw === '') {
-        alert('Please enter your username  or password before entering the clocked-in website.');
-        return;
+        alert("NO CREDENTIALS FOUND!!!")
     }
 
-    // checks if the username and password input are the currect values
-    if (un == recordElement.username && pw == recordElement.password ) {
-        messageText.textContent = "Login successful!"
-        setTimeout(() => {
-            window.location.href = "clocked-in.html"
-        }, 5000);
 
-    } else {
-        messageText.textContent = "Password or Username is invaild."
-    }
 
   }
   // this function was used to setup the username and password for the sign In page
