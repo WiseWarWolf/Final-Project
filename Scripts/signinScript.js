@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // checks if the username and password input are the currect values
         if (un == recordElement.username && pw == recordElement.password ) {
-            messageText.textContent = "Login successful!"
+            messageText.textContent = "Login successful! wait 3 seconds to get to main page"
             setTimeout(() => {
                 window.location.href = "clocked-in.html"
             }, 3000);
