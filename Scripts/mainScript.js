@@ -93,5 +93,15 @@ document.addEventListener('DOMContentLoaded', function() {
     return `${record.name} clocked in at ${formattedTime} on ${formattedDate}`;
   }
 
+  function preLoadedData() {
+    const Data = [
+      { name: "Kole", time: "2025-05-03T05:08:56.211Z"},
+      { name: "Francis", time: "2025-05-02T23:10:00.688Z"},
+      { name: "Bonnie", time: "2025-05-01T09:08:56.124Z"}
+    ];
+
+    localStorage.setItem('clockInRecords', JSON.stringify(Data))
+  }
+
   logPreview()
 });
