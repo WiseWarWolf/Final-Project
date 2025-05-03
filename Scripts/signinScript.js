@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             messageText.textContent = "Login successful!"
             setTimeout(() => {
                 window.location.href = "clocked-in.html"
-            }, 5000);
+            }, 3000);
     
         } else {
             messageText.textContent = "Password or Username is invaild."
@@ -54,10 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         alert("NO CREDENTIALS FOUND!!!")
     }
-
-
-
   }
+
+
   // this function was used to setup the username and password for the sign In page
   function saveSignIn(uname, pword) {
 
