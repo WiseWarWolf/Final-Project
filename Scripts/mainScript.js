@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const nameInput = document.getElementById('name');
  
   const clockInButton = document.getElementById('clockInButton');
- 
+  const preloadButton = document.getElementById('preload');
+  
   clockInButton.addEventListener('click', handleClockIn);
- 
-
+  preloadButton.addEventListener('click', preLoadedData);
 
   function handleClockIn() {
     const name = nameInput.value.trim();
@@ -96,8 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function preLoadedData() {
     const Data = [
       { name: "Kole", time: "2025-05-03T05:08:56.211Z"},
-      { name: "Francis", time: "2025-05-02T23:10:00.688Z"},
-      { name: "Bonnie", time: "2025-05-01T09:08:56.124Z"}
+      { name: "David", time: "2025-05-02T23:10:00.688Z"},
+      { name: "Alex", time: "2025-05-01T09:08:56.124Z"}
     ];
 
     localStorage.setItem('clockInRecords', JSON.stringify(Data))
