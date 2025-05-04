@@ -2,4 +2,4 @@ To use the pages website you enter username and password in to the sign in and c
 gain access to the website now click the load data button and reload the website with ctrl + r and the log should be populated and showed show more recent clock in.
 
 
-here is the website: [https://github.com/WiseWarWolf/Final-Project](https://wisewarwolf.github.io/Final-Project/index.html)
+here is the website: [Clocked-in website](https://wisewarwolf.github.io/Final-Project/index.html)
