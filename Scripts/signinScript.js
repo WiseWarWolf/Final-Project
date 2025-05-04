@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  // this function was used to setup the username and password for the sign In page
+  // this function is used to setup the username and password for the sign In page
   function saveSignIn() {
     const un = usernameInput.value.trim();
     const pw = passwordInput.value.trim();
