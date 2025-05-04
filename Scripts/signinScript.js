@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // checks the username and password input if its populatied
     if (un === '' || pw === '') {
-      alert('Please enter your username  or password before entering the clocked-in website.');
+      alert('Please enter your username or password before entering the clocked-in website.');
       return;
     }
 
