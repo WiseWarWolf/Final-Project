@@ -5,13 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const messageText = document.getElementById('message');
  
   const signInButton = document.getElementById('signInButton');
+  const regisButton = document.getElementById('regiButton')
 
   signInButton.addEventListener('click', handleSignIn);
+  regisButton.addEventListener('click', handleRegistraion);
+
 
   function handleSignIn() {
     validateSignIn();
-    //saveSignIn("admin", "admin") // remove the first two // and click sign in to add the admin as password and usernames 
+    // remove the first two // and click sign in to add the admin as password and usernames 
   }
+
+  function handleRegistraion() {
+    saveSignIn();
+  }
+
+
 
   function validateSignIn() {
     const un = usernameInput.value.trim();
@@ -59,11 +68,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // this function was used to setup the username and password for the sign In page
-  function saveSignIn(uname, pword) {
+  function saveSignIn() {
+    const un = usernameInput.value.trim();
+    const pw = passwordInput.value.trim();
+
+    // checks the username and password input if its populatied
+    if (un === '' || pw === '') {
+      alert('Please enter your username  or password before entering the clocked-in website.');
+      return;
+    }
 
     const signInRecord = {
-      username: uname,
-      password: pword
+      username: un,
+      password: pw
     };
 
     let records = JSON.parse(localStorage.getItem('credentials')) || [];
