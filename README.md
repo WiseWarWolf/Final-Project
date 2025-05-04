@@ -1,7 +1,5 @@
-click the link To use the pages website. then enter a username and password in to the sign in and click the register button to add those username and password as the sign in other wise you get a error saying there is no password and user found. then sign in and wait the 3 seconds to 
-gain access to the website now click the load data button and reload the website with ctrl + r and the log should be populated and showed show more recent clock in. also type any name in to the name input.
-and press clock in to clock in which displays the name and current time and date, as well as adding it to the local storage named clockedInRecords
+Click the link to open the page's website. Then, enter a username and password into the two labeled inputs and then click the register button to add the username and password as credentials to sign in. Otherwise, you get an error saying there is no password or username found. Next, either click the sign in and wait the 3 seconds, or reenter the username and password with the assigned logins and then click enter. If you do not have any of the fields populated, it will give you an error and say you need both a password and a username. After waiting 3 seconds, you gain access to the whole website, where you will need to click the load data button and reload the webpage to see the preview log and full log list. After you do that, you can then type your name in and click clock-in to have you name and the current date and time appear in the preview log and full list from most recent to not so recent. then you can click the log and calender nav buttons at the top to go between the 3 different webpages.
 
 
 
-here is the website: [Clocked-in website](https://wisewarwolf.github.io/Final-Project/index.html)
+Here is the website: [Clocked-in website](https://wisewarwolf.github.io/Final-Project/index.html)
