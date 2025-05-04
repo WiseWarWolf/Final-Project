@@ -95,9 +95,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function preLoadedData() {
     const Data = [
-      { name: "Kole", time: "2025-05-03T05:08:56.211Z"},
+      { name: "Alex", time: "2025-05-01T09:08:56.124Z"},
       { name: "David", time: "2025-05-02T23:10:00.688Z"},
-      { name: "Alex", time: "2025-05-01T09:08:56.124Z"}
+      { name: "Kole", time: "2025-05-03T05:08:56.211Z"}
     ];
 
     localStorage.setItem('clockInRecords', JSON.stringify(Data))
